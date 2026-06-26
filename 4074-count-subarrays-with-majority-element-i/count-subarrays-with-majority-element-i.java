@@ -6,9 +6,12 @@ class Solution {
             int count=0;
             for(int j=i;j<n;j++){
                 if(nums[j]==target){
-                    count++;
+                    count+=1;
                 }
-                if(count>(j-i+1)/2){
+                else{
+                    count-=1;
+                }
+                if(count>0){
                     result++;
                 }
             }
