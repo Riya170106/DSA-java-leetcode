@@ -3,7 +3,7 @@ class Solution {
         if(n<=0){
             return false;
         }
-        int x=(int)(Math.log(n)/Math.log(2));
+        int x=(int)Math.round(Math.log(n)/Math.log(2));
         if(Math.pow(2,x)==n){
             return true;
         }
