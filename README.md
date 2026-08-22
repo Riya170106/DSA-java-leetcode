@@ -13,10 +13,6 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 
 # 📊 Arrays & Array Manipulation
 ## Problem	Solution
-# 📊 Arrays & Array Manipulation
-
-## Problem Solution
-
 - [1. two sum](./1-two-sum/) - java
 - [11. container with most water](./11-container-with-most-water/) - java
 - [121. best time to buy and sell stock](./121-best-time-to-buy-and-sell-stock/) - java
