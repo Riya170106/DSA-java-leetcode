@@ -13,7 +13,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 
 # 📊 Arrays & Array Manipulation
 ## Problem	Solution
-- [1. Two Sum]	- Java
+- [1. Two Sum](./Two-Sum/)	- Java
 - [11.  Container With Most Water]	- Java
 - [121.	Best Time to Buy and Sell Stock]	- Java
 - [122.	Best Time to Buy and Sell Stock II]	- Java
