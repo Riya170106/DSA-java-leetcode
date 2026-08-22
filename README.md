@@ -3,11 +3,11 @@ A collection of my LeetCode problem solutions in Java, automatically synced from
 I am using this repository to practice Data Structures & Algorithms, improve problem-solving skills, and prepare for coding interviews and placements.
 ---
 📌 Repository Highlights
-💻 Language: Java
-🧩 Platform: LeetCode
-🔄 Sync: LeetSync
-📚 Focus: DSA & Problem Solving
-🎯 Goal: Consistent coding practice and interview preparation
+- 💻 Language: Java
+- 🧩 Platform: LeetCode
+- 🔄 Sync: LeetSync
+- 📚 Focus: DSA & Problem Solving
+- 🎯 Goal: Consistent coding practice and interview preparation
 ---
 📚 Problems by Topic
 
