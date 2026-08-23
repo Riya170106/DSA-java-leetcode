@@ -15,7 +15,6 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [303. range sum query immutable](./303-range-sum-query-immutable/) - java
 - [33. search in rotated sorted array](./33-search-in-rotated-sorted-array/) - java
 - [1031. add to array form of integer](./1031-add-to-array-form-of-integer/) - java
-## Problem	Solution
 - [1. two sum](./1-two-sum/) - java
 - [11. container with most water](./11-container-with-most-water/) - java
 - [121. best time to buy and sell stock](./121-best-time-to-buy-and-sell-stock/) - java
@@ -51,7 +50,6 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 
 
 # 🔤 Strings
-## Problem	Solution
 - [13. roman to integer](./13-roman-to-integer/) - java
 - [58. length of last word](./58-length-of-last-word/) - java
 - [168. excel sheet column title](./168-excel-sheet-column-title/) - java
@@ -61,14 +59,12 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 
 
 # 🔗 Linked List
-## Problem	Solution
 - [2. add two numbers](./2-add-two-numbers/) - java
 - [147. insertion sort list](./147-insertion-sort-list/) - java
 - [114. flatten binary tree to linked list](./114-flatten-binary-tree-to-linked-list/) - java
 
 # 🌳 Binary Tree & BST
 - [799. minimum distance between bst nodes](./799-minimum-distance-between-bst-nodes/) - java
-## Problem	Solution
 - [94. binary tree inorder traversal](./94-binary-tree-inorder-traversal/) - java
 - [98. validate binary search tree](./98-validate-binary-search-tree/) - java
 - [100. same tree](./100-same-tree/) - java
@@ -90,7 +86,6 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [783. minimum distance between bst nodes](./783-minimum-distance-between-bst-nodes/) - java
   
 # 🔄 Backtracking & Recursion
-## Problem	Solution
 - [39. combination sum](./39-combination-sum/) - java
 - [46. permutations](./46-permutations/) - java
 - [47. permutations ii](./47-permutations-ii/) - java
@@ -98,19 +93,16 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [90. subsets ii](./90-subsets-ii/) - java
 
 # 🔍 Binary Search
-## Problem	Solution
 - [69. sqrt(x)](./69-sqrt-x/) - java
 - [367. valid perfect square](./367-valid-perfect-square/) - java
 - [745. find smallest letter greater than target](./745-find-smallest-letter-greater-than-target/) - java
 
 # 🪟 Sliding Window
-## Problem	Solution
 - [940. fruit into baskets](./940-fruit-into-baskets/) - java
 - [1460. number of substrings containing all three characters](./1460-number-of-substrings-containing-all-three-characters/) - java
   
 # 🧮 Math & Number Theory
 - [1086. divisor game](./1086-divisor-game/) - java
-## Problem	Solution
 - [202. happy number](./202-happy-number/) - java
 - [231. power of two](./231-power-of-two/) - java
 - [263. ugly number](./263-ugly-number/) - java
@@ -129,7 +121,6 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [728. Self Dividing Numbers](./728-self-dividing-numbers/) - java
   
 # 🧩 Hashing / Frequency Counting
-## Problem	Solution
 - [137. single number ii](./137-single-number-ii/) - java
 - [169. majority element](./169-majority-element/) - java
 - [1297. maximum number of balloons](./1297-maximum-number-of-balloons/) - java
@@ -137,18 +128,15 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1460. Number of Substrings Containing All Three Characters](./1460-number-of-substrings-containing-all-three-characters/) - java
 
 # 📈 Dynamic Programming / Greedy
-## Problem	Solution
 - [70. climbing stairs](./70-climbing-stairs/) - java
 - [121. best time to buy and sell stock](./121-best-time-to-buy-and-sell-stock/) - java
 - [122. best time to buy and sell stock ii](./122-best-time-to-buy-and-sell-stock-ii/) - java
 - [3279. alice and bob playing flower game](./3279-alice-and-bob-playing-flower-game/) - java
 
 # 🧱 Stack / Parentheses
-## Problem	Solution
 - [20. valid parentheses](./20-valid-parentheses/) - java
 
 # 📐 Geometry / Simulation / Miscellaneous
-## Problem	Solution
 - [1115. valid boomerang](./1115-valid-boomerang/) - java
 - [1806. count of matches in tournament](./1806-count-of-matches-in-tournament/) - java
 - [2238. a number after a double reversal](./2238-a-number-after-a-double-reversal/) - java
