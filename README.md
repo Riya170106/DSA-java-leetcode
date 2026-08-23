@@ -119,6 +119,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [3626. smallest divisible digit product i](./3626-smallest-divisible-digit-product-i/) - java
 - [3918.	check divisibility by digit sum and product](./3918-check-divisibility-by-digit-sum-and-product/)	-Java
 - [728. Self Dividing Numbers](./728-self-dividing-numbers/) - java
+- [96. unique binary search trees](./96-unique-binary-search-trees/) - java
   
 # 🧩 Hashing / Frequency Counting
 - [137. single number ii](./137-single-number-ii/) - java
