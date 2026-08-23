@@ -21,7 +21,7 @@ def get_leetcode_topic(title_slug):
       }
     }
     """
-    payload = json.dumps({"query": query, "variables": {"titleSlug": titleSlug}}).encode('utf-8')
+    payload = json.dumps({"query": query, "variables": {"titleSlug": title_slug}}).encode('utf-8')
     req = urllib.request.Request(url, data=payload, headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'})
     
     try:
@@ -83,7 +83,7 @@ def update_readme():
         if os.path.isdir(item) and item not in IGNORE_DIRS:
             prob_num, slug = parse_folder_name(item)
             if prob_num and slug:
-                # Check if folder name or problem ID already exists in README
+                # Skip if already logged in README
                 if f"./{item}/" in readme_content or re.search(rf'\[{prob_num}\.\s', readme_content):
                     continue 
 
@@ -96,7 +96,6 @@ def update_readme():
                         break
 
                 title = slug.replace('-', ' ')
-                # Formats exactly like your current README style: - [1. two sum](./1-two-sum/) - java
                 formatted_entry = f"- [{prob_num}. {title}](./{item}/) - {lang}"
 
                 topic = get_leetcode_topic(slug)
@@ -104,7 +103,7 @@ def update_readme():
 
                 if header_idx != -1:
                     insert_idx = header_idx + 1
-                    # Find end of section before next # section
+                    # Find insertion point under target header section
                     while insert_idx < len(readme_lines) and not (readme_lines[insert_idx].strip().startswith('#') and not readme_lines[insert_idx].strip().startswith('## Problem Solution')):
                         insert_idx += 1
                     
@@ -113,6 +112,7 @@ def update_readme():
 
                     readme_lines.insert(insert_idx, formatted_entry)
                 else:
+                    # Append new header if topic section is absent
                     readme_lines.append("")
                     readme_lines.append(f"# {topic}")
                     readme_lines.append("## Problem Solution")
