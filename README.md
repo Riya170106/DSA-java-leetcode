@@ -12,6 +12,9 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 📚 Problems by Topic
 
 # 📊 Arrays & Array Manipulation
+- [303. range sum query immutable](./303-range-sum-query-immutable/) - java
+- [33. search in rotated sorted array](./33-search-in-rotated-sorted-array/) - java
+- [1031. add to array form of integer](./1031-add-to-array-form-of-integer/) - java
 ## Problem	Solution
 - [1. two sum](./1-two-sum/) - java
 - [11. container with most water](./11-container-with-most-water/) - java
@@ -64,6 +67,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [114. flatten binary tree to linked list](./114-flatten-binary-tree-to-linked-list/) - java
 
 # 🌳 Binary Tree & BST
+- [799. minimum distance between bst nodes](./799-minimum-distance-between-bst-nodes/) - java
 ## Problem	Solution
 - [94. binary tree inorder traversal](./94-binary-tree-inorder-traversal/) - java
 - [98. validate binary search tree](./98-validate-binary-search-tree/) - java
@@ -105,6 +109,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1460. number of substrings containing all three characters](./1460-number-of-substrings-containing-all-three-characters/) - java
   
 # 🧮 Math & Number Theory
+- [1086. divisor game](./1086-divisor-game/) - java
 ## Problem	Solution
 - [202. happy number](./202-happy-number/) - java
 - [231. power of two](./231-power-of-two/) - java
