@@ -22,7 +22,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Update README
         run: python .github/update_readme.py
@@ -37,6 +37,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No README changes."
           else
-            git commit -m "Auto-update README with new LeetCode solutions"
+            git commit -m "Auto-update README with new LeetCode solution"
             git push
           fi
