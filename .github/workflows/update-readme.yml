@@ -20,7 +20,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run Python Script
-        run: python update_readme.py
+        run: python .github/update_readme.py
 
       - name: Commit and Push Changes
         run: |
