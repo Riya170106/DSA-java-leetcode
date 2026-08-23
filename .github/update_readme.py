@@ -1,320 +1,127 @@
 import os
 import re
-import json
 import urllib.request
-import urllib.error
+import json
 
-README = "README.md"
-
-# Map LeetCode tags to YOUR README topic names
-TOPIC_MAP = {
-    "array": "📊 Arrays & Array Manipulation",
-    "string": "🔤 Strings",
-    "linked-list": "🔗 Linked List",
-    "tree": "🌳 Binary Tree & BST",
-    "binary-search-tree": "🌳 Binary Tree & BST",
-    "backtracking": "🔄 Backtracking & Recursion",
-    "recursion": "🔄 Backtracking & Recursion",
-    "binary-search": "🔍 Binary Search",
-    "sliding-window": "🪟 Sliding Window",
-    "math": "🧮 Math & Number Theory",
-    "number-theory": "🧮 Math & Number Theory",
-    "hash-table": "🧩 Hashing / Frequency Counting",
-    "dynamic-programming": "📈 Dynamic Programming / Greedy",
-    "greedy": "📈 Dynamic Programming / Greedy",
-    "stack": "🧱 Stack / Parentheses",
-    "geometry": "📐 Geometry / Simulation / Miscellaneous",
-    "simulation": "📐 Geometry / Simulation / Miscellaneous",
+IGNORE_DIRS = {'.git', '.github', '.vscode', 'node_modules'}
+EXTENSION_MAP = {
+    '.java': 'java',
+    '.py': 'python',
+    '.cpp': 'cpp',
+    '.js': 'javascript',
+    '.ts': 'typescript'
 }
 
-
-def get_problem_folders():
-    """
-    Find LeetSync problem folders.
-    Folder names look like:
-    1-two-sum
-    121-best-time-to-buy-and-sell-stock
-    """
-
-    folders = []
-
-    for item in os.listdir("."):
-        if not os.path.isdir(item):
-            continue
-
-        match = re.match(r"^(\d+)-(.+)$", item)
-
-        if match:
-            problem_number = match.group(1)
-            slug = match.group(2)
-
-            folders.append({
-                "number": int(problem_number),
-                "slug": slug,
-                "folder": item
-            })
-
-    return folders
-
-
-def get_slug_from_folder(folder):
-    """
-    Convert:
-    1-two-sum
-    into:
-    two-sum
-    """
-
-    match = re.match(r"^\d+-(.+)$", folder)
-
-    if match:
-        return match.group(1)
-
-    return None
-
-
-def get_leetcode_data(slug):
-    """
-    Get title and topic tags from LeetCode GraphQL API.
-    """
-
+def get_leetcode_topic(title_slug):
     url = "https://leetcode.com/graphql"
+    query = """
+    query questionData($titleSlug: String!) {
+      question(titleSlug: $titleSlug) {
+        topicTags { name }
+      }
+    }
+    """
+    payload = json.dumps({"query": query, "variables": {"titleSlug": titleSlug}}).encode('utf-8')
+    req = urllib.request.Request(url, data=payload, headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'})
+    
+    try:
+        with urllib.request.urlopen(req, timeout=5) as response:
+            data = json.loads(response.read().decode())
+            tags = data.get('data', {}).get('question', {}).get('topicTags', [])
+            if tags:
+                return tags[0]['name']
+    except Exception:
+        pass
+    return "Others"
 
-    query = {
-        "operationName": "questionData",
-        "variables": {
-            "titleSlug": slug
-        },
-        "query": """
-        query questionData($titleSlug: String!) {
-            question(titleSlug: $titleSlug) {
-                questionFrontendId
-                title
-                titleSlug
-                topicTags {
-                    name
-                    slug
-                }
-            }
-        }
-        """
+def parse_folder_name(dir_name):
+    match = re.match(r'^0*(\d+)-(.*)$', dir_name)
+    if match:
+        return int(match.group(1)), match.group(2)
+    return None, None
+
+def match_topic_header(topic_name, readme_lines):
+    aliases = {
+        "array": ["array", "arrays"],
+        "linked list": ["linked list", "linkedlist"],
+        "string": ["string", "strings"],
+        "math": ["math", "maths", "math & number theory"],
+        "tree": ["tree", "binary tree & bst"],
+        "depth-first search": ["binary tree & bst", "tree"],
+        "breadth-first search": ["binary tree & bst", "tree"],
+        "hash table": ["hashing / frequency counting", "hash table"],
+        "two pointers": ["arrays & array manipulation", "two pointers"],
+        "dynamic programming": ["dynamic programming / greedy"],
+        "greedy": ["dynamic programming / greedy"],
+        "stack": ["stack / parentheses"],
+        "sliding window": ["sliding window"],
+        "backtracking": ["backtracking & recursion"],
+        "recursion": ["backtracking & recursion"]
     }
 
-    data = json.dumps(query).encode("utf-8")
+    targets = aliases.get(topic_name.lower(), [topic_name.lower()])
 
-    request = urllib.request.Request(
-        url,
-        data=data,
-        headers={
-            "Content-Type": "application/json",
-            "User-Agent": "Mozilla/5.0"
-        },
-        method="POST"
-    )
+    for idx, line in enumerate(readme_lines):
+        if line.strip().startswith('#'):
+            header_text = re.sub(r'^[#\s\W]+', '', line).strip().lower()
+            for target in targets:
+                if target in header_text:
+                    return idx
+    return -1
 
-    try:
-        with urllib.request.urlopen(request, timeout=20) as response:
-            result = json.loads(response.read().decode("utf-8"))
-
-        question = result.get("data", {}).get("question")
-
-        if question:
-            return question
-
-    except Exception as e:
-        print(f"Could not fetch LeetCode data for {slug}: {e}")
-
-    return None
-
-
-def find_topic(tags):
-    """
-    Find the first matching topic from our topic map.
-    """
-
-    for tag in tags:
-        tag_slug = tag.get("slug", "").lower()
-
-        if tag_slug in TOPIC_MAP:
-            return TOPIC_MAP[tag_slug]
-
-    return "📐 Geometry / Simulation / Miscellaneous"
-
-
-def find_topic_section(readme, topic):
-    """
-    Find the section of the README belonging to a topic.
-    Matches a level-1 markdown heading: "# <topic>"
-    """
-
-    pattern = re.escape("# " + topic)
-
-    match = re.search(
-        pattern + r".*?(?=\n# |\Z)",
-        readme,
-        re.DOTALL
-    )
-
-    return match
-
-
-def add_problem_to_existing_topic(readme, topic, problem_line):
-    """
-    Add the new problem to an existing topic section.
-    """
-
-    section_match = find_topic_section(readme, topic)
-
-    if not section_match:
-        return None
-
-    section = section_match.group(0)
-
-    # Don't add duplicate
-    if problem_line in section:
-        return readme
-
-    lines = section.splitlines()
-
-    # Find "Problem Solution" heading, regardless of how many '#' it has
-    insert_index = None
-
-    for i, line in enumerate(lines):
-        cleaned = line.strip().lstrip("#").strip().lower()
-        if cleaned == "problem solution":
-            insert_index = i + 1
-            break
-
-    if insert_index is None:
-        return None
-
-    # Keep a blank line between the heading and the list if one existed
-    if insert_index < len(lines) and lines[insert_index].strip() == "":
-        insert_index += 1
-
-    lines.insert(insert_index, problem_line)
-
-    new_section = "\n".join(lines)
-
-    return (
-        readme[:section_match.start()]
-        + new_section
-        + readme[section_match.end():]
-    )
-
-
-def create_new_topic(readme, topic, problem_line):
-    """
-    Create a new topic section if it doesn't exist.
-    Uses proper markdown headings so future runs can find it again.
-    """
-
-    new_section = (
-        f"\n\n# {topic}\n\n"
-        f"## Problem Solution\n\n"
-        f"{problem_line}\n"
-    )
-
-    # Add before Practice Areas
-    marker = "🏆 Practice Areas"
-
-    if marker in readme:
-        return readme.replace(
-            marker,
-            new_section + "\n" + marker,
-            1
-        )
-
-    # Otherwise append near the end
-    return readme + new_section
-
-
-def problem_already_exists(readme, number):
-    """
-    Check whether a problem is already present in README.
-    """
-
-    pattern = rf"(?m)^\s*{re.escape(str(number))}\.\s+"
-
-    return re.search(pattern, readme) is not None
-
-
-def main():
-
-    print("Reading README...")
-
-    if not os.path.exists(README):
-        print("README.md not found.")
+def update_readme():
+    readme_path = "README.md"
+    if not os.path.exists(readme_path):
         return
 
-    with open(README, "r", encoding="utf-8") as file:
-        readme = file.read()
+    with open(readme_path, "r", encoding="utf-8") as f:
+        readme_content = f.read()
 
-    folders = get_problem_folders()
+    readme_lines = readme_content.splitlines()
 
-    print(f"Found {len(folders)} problem folders.")
+    for item in os.listdir("."):
+        if os.path.isdir(item) and item not in IGNORE_DIRS:
+            prob_num, slug = parse_folder_name(item)
+            if prob_num and slug:
+                # Check if folder name or problem ID already exists in README
+                if f"./{item}/" in readme_content or re.search(rf'\[{prob_num}\.\s', readme_content):
+                    continue 
 
-    changed = False
+                item_path = os.path.join(".", item)
+                lang = "java"
+                for file in os.listdir(item_path):
+                    ext = os.path.splitext(file)[1]
+                    if ext in EXTENSION_MAP:
+                        lang = EXTENSION_MAP[ext]
+                        break
 
-    for problem in folders:
+                title = slug.replace('-', ' ')
+                # Formats exactly like your current README style: - [1. two sum](./1-two-sum/) - java
+                formatted_entry = f"- [{prob_num}. {title}](./{item}/) - {lang}"
 
-        number = problem["number"]
-        folder = problem["folder"]
-        slug = problem["slug"]
+                topic = get_leetcode_topic(slug)
+                header_idx = match_topic_header(topic, readme_lines)
 
-        # Already in README?
-        if problem_already_exists(readme, number):
-            continue
+                if header_idx != -1:
+                    insert_idx = header_idx + 1
+                    # Find end of section before next # section
+                    while insert_idx < len(readme_lines) and not (readme_lines[insert_idx].strip().startswith('#') and not readme_lines[insert_idx].strip().startswith('## Problem Solution')):
+                        insert_idx += 1
+                    
+                    while insert_idx > header_idx + 1 and readme_lines[insert_idx - 1].strip() == '':
+                        insert_idx -= 1
 
-        print(f"New problem detected: {number} - {slug}")
+                    readme_lines.insert(insert_idx, formatted_entry)
+                else:
+                    readme_lines.append("")
+                    readme_lines.append(f"# {topic}")
+                    readme_lines.append("## Problem Solution")
+                    readme_lines.append(formatted_entry)
 
-        data = get_leetcode_data(slug)
+                readme_content = "\n".join(readme_lines)
 
-        if not data:
-            print(f"Skipping {number}: LeetCode data unavailable.")
-            continue
-
-        title = data.get("title", slug)
-
-        tags = data.get("topicTags", [])
-
-        topic = find_topic(tags)
-
-        problem_line = (
-            f"- [{number}. {title}](./{folder}/) - java"
-        )
-
-        print(f"Topic: {topic}")
-
-        updated_readme = add_problem_to_existing_topic(
-            readme,
-            topic,
-            problem_line
-        )
-
-        if updated_readme is None:
-            print(f"Creating new topic: {topic}")
-
-            updated_readme = create_new_topic(
-                readme,
-                topic,
-                problem_line
-            )
-
-        if updated_readme != readme:
-            readme = updated_readme
-            changed = True
-
-    if changed:
-
-        with open(README, "w", encoding="utf-8") as file:
-            file.write(readme)
-
-        print("README updated successfully.")
-
-    else:
-        print("No README changes required.")
-
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(readme_lines) + "\n")
 
 if __name__ == "__main__":
-    main()
+    update_readme()
