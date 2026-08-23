@@ -128,6 +128,8 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [137. single number ii](./137-single-number-ii/) - java
 - [169. majority element](./169-majority-element/) - java
 - [1297. maximum number of balloons](./1297-maximum-number-of-balloons/) - java
+- [1212. Sequential Digits](./1212-sequential-digits/) - java
+- [1460. Number of Substrings Containing All Three Characters](./1460-number-of-substrings-containing-all-three-characters/) - java
 
 # 📈 Dynamic Programming / Greedy
 ## Problem	Solution
@@ -150,11 +152,6 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [4107. find missing elements](./4107-find-missing-elements/) - java
 ---
 
-
-🧩 Hashing / Frequency Counting
-Problem Solution
-- [1212. Sequential Digits](./1212-sequential-digits/) - java
-- [1460. Number of Substrings Containing All Three Characters](./1460-number-of-substrings-containing-all-three-characters/) - java
 
 🏆 Practice Areas
 Arrays & Strings
