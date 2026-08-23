@@ -148,6 +148,565 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [4057. total waviness of numbers in range](./4057-total-waviness-of-numbers-in-range/) - java
 - [4107. find missing elements](./4107-find-missing-elements/) - java
 ---
+
+
+🧩 Hashing / Frequency Counting
+Problem Solution
+- [1212. Sequential Digits](./1212-sequential-digits/) - java
+- [1460. Number of Substrings Containing All Three Characters](./1460-number-of-substrings-containing-all-three-characters/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [412. Fizz Buzz](./412-fizz-buzz/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [507. Perfect Number](./507-perfect-number/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [39. Combination Sum](./39-combination-sum/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [745. Find Smallest Letter Greater Than Target](./745-find-smallest-letter-greater-than-target/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [1031. Add to Array-Form of Integer](./1031-add-to-array-form-of-integer/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [235. Lowest Common Ancestor of a Binary Search Tree](./235-lowest-common-ancestor-of-a-binary-search-tree/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [90. Subsets II](./90-subsets-ii/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [100. Same Tree](./100-same-tree/) - java
+
+
+
+🧱 Stack / Parentheses
+Problem Solution
+- [144. Binary Tree Preorder Traversal](./144-binary-tree-preorder-traversal/) - java
+
+
+
+🔗 Linked List
+Problem Solution
+- [2. Add Two Numbers](./2-add-two-numbers/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [628. Maximum Product of Three Numbers](./628-maximum-product-of-three-numbers/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [4135. Concatenate Non-Zero Digits and Multiply by Sum I](./4135-concatenate-non-zero-digits-and-multiply-by-sum-i/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [1950. Sign of the Product of an Array](./1950-sign-of-the-product-of-an-array/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [326. Power of Three](./326-power-of-three/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [4075. Count Subarrays With Majority Element II](./4075-count-subarrays-with-majority-element-ii/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [122. Best Time to Buy and Sell Stock II](./122-best-time-to-buy-and-sell-stock-ii/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [1421. Find Numbers with Even Number of Digits](./1421-find-numbers-with-even-number-of-digits/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [129. Sum Root to Leaf Numbers](./129-sum-root-to-leaf-numbers/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [2649. Count Total Number of Colored Cells](./2649-count-total-number-of-colored-cells/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [46. Permutations](./46-permutations/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [1. Two Sum](./1-two-sum/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [2037. Count Square Sum Triples](./2037-count-square-sum-triples/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [4107. Find Missing Elements](./4107-find-missing-elements/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [168. Excel Sheet Column Title](./168-excel-sheet-column-title/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [230. Kth Smallest Element in a BST](./230-kth-smallest-element-in-a-bst/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [3626. Smallest Divisible Digit Product I](./3626-smallest-divisible-digit-product-i/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [3279. Alice and Bob Playing Flower Game](./3279-alice-and-bob-playing-flower-game/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [319. Bulb Switcher](./319-bulb-switcher/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [1965. Sum of Digits in Base K](./1965-sum-of-digits-in-base-k/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [108. Convert Sorted Array to Binary Search Tree](./108-convert-sorted-array-to-binary-search-tree/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [799. Minimum Distance Between BST Nodes](./799-minimum-distance-between-bst-nodes/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [728. Self Dividing Numbers](./728-self-dividing-numbers/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [78. Subsets](./78-subsets/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [1013. Fibonacci Number](./1013-fibonacci-number/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [4074. Count Subarrays With Majority Element I](./4074-count-subarrays-with-majority-element-i/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [47. Permutations II](./47-permutations-ii/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [121. Best Time to Buy and Sell Stock](./121-best-time-to-buy-and-sell-stock/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [1574. Maximum Product of Two Elements in an Array](./1574-maximum-product-of-two-elements-in-an-array/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [3859. Maximum Product of Two Digits](./3859-maximum-product-of-two-digits/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [441. Arranging Coins](./441-arranging-coins/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [371. Sum of Two Integers](./371-sum-of-two-integers/) - java
+
+
+
+🧱 Stack / Parentheses
+Problem Solution
+- [94. Binary Tree Inorder Traversal](./94-binary-tree-inorder-traversal/) - java
+
+
+
+🧩 Hashing / Frequency Counting
+Problem Solution
+- [202. Happy Number](./202-happy-number/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [1115. Valid Boomerang](./1115-valid-boomerang/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [283. Move Zeroes](./283-move-zeroes/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [3236. Smallest Missing Integer Greater Than Sequential Prefix Sum](./3236-smallest-missing-integer-greater-than-sequential-prefix-sum/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [101. Symmetric Tree](./101-symmetric-tree/) - java
+
+
+
+🧱 Stack / Parentheses
+Problem Solution
+- [145. Binary Tree Postorder Traversal](./145-binary-tree-postorder-traversal/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [164. Maximum Gap](./164-maximum-gap/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [70. Climbing Stairs](./70-climbing-stairs/) - java
+
+
+
+🔤 Strings
+Problem Solution
+- [20. Valid Parentheses](./20-valid-parentheses/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [1349. Check If It Is a Straight Line](./1349-check-if-it-is-a-straight-line/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [69. Sqrt(x)](./69-sqrtx/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [572. Subtree of Another Tree](./572-subtree-of-another-tree/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [944. Smallest Range I](./944-smallest-range-i/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [231. Power of Two](./231-power-of-two/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [2106. Find Greatest Common Divisor of Array](./2106-find-greatest-common-divisor-of-array/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [98. Validate Binary Search Tree](./98-validate-binary-search-tree/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [11. Container With Most Water](./11-container-with-most-water/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [1833. Find the Highest Altitude](./1833-find-the-highest-altitude/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [543. Diameter of Binary Tree](./543-diameter-of-binary-tree/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [2238. A Number After a Double Reversal](./2238-a-number-after-a-double-reversal/) - java
+
+
+
+🧩 Hashing / Frequency Counting
+Problem Solution
+- [13. Roman to Integer](./13-roman-to-integer/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [3918. Check Divisibility by Digit Sum and Product](./3918-check-divisibility-by-digit-sum-and-product/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [940. Fruit Into Baskets](./940-fruit-into-baskets/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [1806. Count of Matches in Tournament](./1806-count-of-matches-in-tournament/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [169. Majority Element](./169-majority-element/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [2812. Find the Maximum Achievable Number](./2812-find-the-maximum-achievable-number/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [367. Valid Perfect Square](./367-valid-perfect-square/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [2491. Smallest Even Multiple](./2491-smallest-even-multiple/) - java
+
+
+
+🧩 Hashing / Frequency Counting
+Problem Solution
+- [1297. Maximum Number of Balloons](./1297-maximum-number-of-balloons/) - java
+
+
+
+🔍 Binary Search
+Problem Solution
+- [222. Count Complete Tree Nodes](./222-count-complete-tree-nodes/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [1630. Count Odd Numbers in an Interval Range](./1630-count-odd-numbers-in-an-interval-range/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [110. Balanced Binary Tree](./110-balanced-binary-tree/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [112. Path Sum](./112-path-sum/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [137. Single Number II](./137-single-number-ii/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [292. Nim Game](./292-nim-game/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [1086. Divisor Game](./1086-divisor-game/) - java
+
+
+
+🔤 Strings
+Problem Solution
+- [58. Length of Last Word](./58-length-of-last-word/) - java
+
+
+
+🔗 Linked List
+Problem Solution
+- [147. Insertion Sort List](./147-insertion-sort-list/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [111. Minimum Depth of Binary Tree](./111-minimum-depth-of-binary-tree/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [263. Ugly Number](./263-ugly-number/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [2099. Number of Strings That Appear as Substrings in Word](./2099-number-of-strings-that-appear-as-substrings-in-word/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [404. Sum of Left Leaves](./404-sum-of-left-leaves/) - java
+
+
+
+🌳 Binary Tree & BST
+Problem Solution
+- [104. Maximum Depth of Binary Tree](./104-maximum-depth-of-binary-tree/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [342. Power of Four](./342-power-of-four/) - java
+
+
+
+🔤 Strings
+Problem Solution
+- [344. Reverse String](./344-reverse-string/) - java
+
+
+
+📊 Arrays & Array Manipulation
+Problem Solution
+- [598. Range Addition II](./598-range-addition-ii/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [4057. Total Waviness of Numbers in Range I](./4057-total-waviness-of-numbers-in-range-i/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [3275. Minimum Number of Pushes to Type Word I](./3275-minimum-number-of-pushes-to-type-word-i/) - java
+
+
+
+🧮 Math & Number Theory
+Problem Solution
+- [3995. GCD of Odd and Even Sums](./3995-gcd-of-odd-and-even-sums/) - java
+
+
+
+🔗 Linked List
+Problem Solution
+- [114. Flatten Binary Tree to Linked List](./114-flatten-binary-tree-to-linked-list/) - java
+
 🏆 Practice Areas
 Arrays & Strings
 Linked Lists
