@@ -1,4 +1,4 @@
-name: Update README
+name: Auto Update README
 
 on:
   push:
@@ -6,40 +6,25 @@ on:
       - main
     paths-ignore:
       - 'README.md'
-      - '.github/**'
-
-permissions:
-  contents: write
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.x'
 
-      - name: Update README
-        run: python .github/update_readme.py
+      - name: Run Python Script
+        run: python update_readme.py
 
-      - name: Commit README changes
+      - name: Commit and Push Changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-
-          if git diff --cached --quiet; then
-            echo "No README changes."
-          else
-            git commit -m "Auto-update README with new LeetCode solution"
-            git push
-          fi
-       
+          git diff --staged --quiet || (git commit -m "auto: update README with new problem solution" && git push)
