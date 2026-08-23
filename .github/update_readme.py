@@ -12,11 +12,12 @@ EXTENSION_MAP = {
     '.ts': 'typescript'
 }
 
-def get_leetcode_topic(title_slug):
+def get_leetcode_details(title_slug):
     url = "https://leetcode.com/graphql"
     query = """
     query questionData($titleSlug: String!) {
       question(titleSlug: $titleSlug) {
+        difficulty
         topicTags { name }
       }
     }
@@ -27,12 +28,14 @@ def get_leetcode_topic(title_slug):
     try:
         with urllib.request.urlopen(req, timeout=5) as response:
             data = json.loads(response.read().decode())
-            tags = data.get('data', {}).get('question', {}).get('topicTags', [])
-            if tags:
-                return tags[0]['name']
+            q = data.get('data', {}).get('question', {})
+            difficulty = q.get('difficulty', 'Easy')
+            tags = q.get('topicTags', [])
+            topic = tags[0]['name'] if tags else 'Others'
+            return topic, difficulty
     except Exception:
         pass
-    return "Others"
+    return "Others", "Easy"
 
 def parse_folder_name(dir_name):
     match = re.match(r'^0*(\d+)-(.*)$', dir_name)
@@ -69,7 +72,7 @@ def match_topic_header(topic_name, readme_lines):
                     return idx
     return -1
 
-def update_readme():
+def update_readme_and_stats():
     readme_path = "README.md"
     if not os.path.exists(readme_path):
         return
@@ -79,11 +82,25 @@ def update_readme():
 
     readme_lines = readme_content.splitlines()
 
+    easy_count = 0
+    medium_count = 0
+    hard_count = 0
+
     for item in os.listdir("."):
         if os.path.isdir(item) and item not in IGNORE_DIRS:
             prob_num, slug = parse_folder_name(item)
             if prob_num and slug:
-                # Skip if already logged in README
+                topic, difficulty = get_leetcode_details(slug)
+
+                # Track difficulty counts
+                if difficulty == "Easy":
+                    easy_count += 1
+                elif difficulty == "Medium":
+                    medium_count += 1
+                elif difficulty == "Hard":
+                    hard_count += 1
+
+                # If already logged in README, skip markdown insertion
                 if f"./{item}/" in readme_content or re.search(rf'\[{prob_num}\.\s', readme_content):
                     continue 
 
@@ -98,12 +115,10 @@ def update_readme():
                 title = slug.replace('-', ' ')
                 formatted_entry = f"- [{prob_num}. {title}](./{item}/) - {lang}"
 
-                topic = get_leetcode_topic(slug)
                 header_idx = match_topic_header(topic, readme_lines)
 
                 if header_idx != -1:
                     insert_idx = header_idx + 1
-                    # Find insertion point under target header section
                     while insert_idx < len(readme_lines) and not (readme_lines[insert_idx].strip().startswith('#') and not readme_lines[insert_idx].strip().startswith('## Problem Solution')):
                         insert_idx += 1
                     
@@ -112,7 +127,6 @@ def update_readme():
 
                     readme_lines.insert(insert_idx, formatted_entry)
                 else:
-                    # Append new header if topic section is absent
                     readme_lines.append("")
                     readme_lines.append(f"# {topic}")
                     readme_lines.append("## Problem Solution")
@@ -120,8 +134,20 @@ def update_readme():
 
                 readme_content = "\n".join(readme_lines)
 
+    # Save README.md
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write("\n".join(readme_lines) + "\n")
 
+    # Save stats.json
+    stats_data = {
+        "solved": easy_count + medium_count + hard_count,
+        "easy": easy_count,
+        "medium": medium_count,
+        "hard": hard_count
+    }
+
+    with open("stats.json", "w", encoding="utf-8") as sf:
+        json.dump(stats_data, sf, indent=4)
+
 if __name__ == "__main__":
-    update_readme()
+    update_readme_and_stats()
