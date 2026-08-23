@@ -144,6 +144,7 @@ def find_topic(tags):
 def find_topic_section(readme, topic):
     """
     Find the section of the README belonging to a topic.
+    Matches a level-1 markdown heading: "# <topic>"
     """
 
     pattern = re.escape("# " + topic)
@@ -175,16 +176,21 @@ def add_problem_to_existing_topic(readme, topic, problem_line):
 
     lines = section.splitlines()
 
-    # Find "Problem Solution"
+    # Find "Problem Solution" heading, regardless of how many '#' it has
     insert_index = None
 
     for i, line in enumerate(lines):
-        if line.strip().lower() == "problem solution":
+        cleaned = line.strip().lstrip("#").strip().lower()
+        if cleaned == "problem solution":
             insert_index = i + 1
             break
 
     if insert_index is None:
         return None
+
+    # Keep a blank line between the heading and the list if one existed
+    if insert_index < len(lines) and lines[insert_index].strip() == "":
+        insert_index += 1
 
     lines.insert(insert_index, problem_line)
 
@@ -200,11 +206,12 @@ def add_problem_to_existing_topic(readme, topic, problem_line):
 def create_new_topic(readme, topic, problem_line):
     """
     Create a new topic section if it doesn't exist.
+    Uses proper markdown headings so future runs can find it again.
     """
 
     new_section = (
-        f"\n\n{topic}\n"
-        f"Problem Solution\n"
+        f"\n\n# {topic}\n\n"
+        f"## Problem Solution\n\n"
         f"{problem_line}\n"
     )
 
