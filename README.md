@@ -46,6 +46,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1421. find numbers with even number of digits](./1421-find-numbers-with-even-number-of-digits/) - java
 - [1460. number of substrings containing all three characters](./1460-number-of-substrings-containing-all-three-characters/) - java
 - [1574. maximum product of two elements in an array](./1574-maximum-product-of-two-elements-in-an-array/) - java
+- [494. target sum](./494-target-sum/) - java
 
 
 
