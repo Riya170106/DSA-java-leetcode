@@ -47,6 +47,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1460. number of substrings containing all three characters](./1460-number-of-substrings-containing-all-three-characters/) - java
 - [1574. maximum product of two elements in an array](./1574-maximum-product-of-two-elements-in-an-array/) - java
 - [494. target sum](./494-target-sum/) - java
+- [4080. smallest missing multiple of k](./4080-smallest-missing-multiple-of-k/) - java
 
 
 
