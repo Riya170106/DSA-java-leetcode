@@ -49,6 +49,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [494. target sum](./494-target-sum/) - java
 - [4080. smallest missing multiple of k](./4080-smallest-missing-multiple-of-k/) - java
 - [42. trapping rain water](./42-trapping-rain-water/) - java
+- [747. min cost climbing stairs](./747-min-cost-climbing-stairs/) - java
 
 
 
