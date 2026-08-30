@@ -52,6 +52,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [747. min cost climbing stairs](./747-min-cost-climbing-stairs/) - java
 - [35. search insert position](./35-search-insert-position/) - java
 - [1476. count negative numbers in a sorted matrix](./1476-count-negative-numbers-in-a-sorted-matrix/) - java
+- [396. rotate function](./396-rotate-function/) - java
 
 
 
