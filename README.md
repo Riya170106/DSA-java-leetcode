@@ -53,6 +53,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [35. search insert position](./35-search-insert-position/) - java
 - [1476. count negative numbers in a sorted matrix](./1476-count-negative-numbers-in-a-sorted-matrix/) - java
 - [396. rotate function](./396-rotate-function/) - java
+- [1395. minimum time visiting all points](./1395-minimum-time-visiting-all-points/) - java
 
 
 
@@ -127,6 +128,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [3918.	check divisibility by digit sum and product](./3918-check-divisibility-by-digit-sum-and-product/)	-Java
 - [728. Self Dividing Numbers](./728-self-dividing-numbers/) - java
 - [96. unique binary search trees](./96-unique-binary-search-trees/) - java
+- [1444. number of steps to reduce a number to zero](./1444-number-of-steps-to-reduce-a-number-to-zero/) - java
   
 # 🧩 Hashing / Frequency Counting
 - [137. single number ii](./137-single-number-ii/) - java
