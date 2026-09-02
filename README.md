@@ -129,6 +129,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [728. Self Dividing Numbers](./728-self-dividing-numbers/) - java
 - [96. unique binary search trees](./96-unique-binary-search-trees/) - java
 - [1444. number of steps to reduce a number to zero](./1444-number-of-steps-to-reduce-a-number-to-zero/) - java
+- [2383. add two integers](./2383-add-two-integers/) - java
   
 # 🧩 Hashing / Frequency Counting
 - [137. single number ii](./137-single-number-ii/) - java
