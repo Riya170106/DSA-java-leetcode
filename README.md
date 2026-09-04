@@ -55,6 +55,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [396. rotate function](./396-rotate-function/) - java
 - [1395. minimum time visiting all points](./1395-minimum-time-visiting-all-points/) - java
 - [4256. construct uniform parity array i](./4256-construct-uniform-parity-array-i/) - java
+- [136. single number](./136-single-number/) - java
 
 
 
