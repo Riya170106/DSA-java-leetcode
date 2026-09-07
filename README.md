@@ -58,6 +58,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [136. single number](./136-single-number/) - java
 - [4284. smallest stable index i](./4284-smallest-stable-index-i/) - java
 - [4285. smallest stable index ii](./4285-smallest-stable-index-ii/) - java
+- [1635. number of good pairs](./1635-number-of-good-pairs/) - java
 
 
 
