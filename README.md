@@ -61,6 +61,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1635. number of good pairs](./1635-number-of-good-pairs/) - java
 - [4116. minimum moves to equal array elements iii](./4116-minimum-moves-to-equal-array-elements-iii/) - java
 - [453. minimum moves to equal array elements](./453-minimum-moves-to-equal-array-elements/) - java
+- [3799. unique 3 digit even numbers](./3799-unique-3-digit-even-numbers/) - java
 
 
 
