@@ -148,6 +148,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1297. maximum number of balloons](./1297-maximum-number-of-balloons/) - java
 - [1212. Sequential Digits](./1212-sequential-digits/) - java
 - [1460. Number of Substrings Containing All Three Characters](./1460-number-of-substrings-containing-all-three-characters/) - java
+- [4321. digit frequency score](./4321-digit-frequency-score/) - java
 
 # 📈 Dynamic Programming / Greedy
 - [70. climbing stairs](./70-climbing-stairs/) - java
