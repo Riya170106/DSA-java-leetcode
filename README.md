@@ -141,6 +141,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [3371. harshad number](./3371-harshad-number/) - java
 - [4245. count commas in range](./4245-count-commas-in-range/) - java
 - [4248. count commas in range ii](./4248-count-commas-in-range-ii/) - java
+- [4275. traffic signal color](./4275-traffic-signal-color/) - java
   
 # 🧩 Hashing / Frequency Counting
 - [137. single number ii](./137-single-number-ii/) - java
