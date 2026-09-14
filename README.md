@@ -62,6 +62,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [4116. minimum moves to equal array elements iii](./4116-minimum-moves-to-equal-array-elements-iii/) - java
 - [453. minimum moves to equal array elements](./453-minimum-moves-to-equal-array-elements/) - java
 - [3799. unique 3 digit even numbers](./3799-unique-3-digit-even-numbers/) - java
+- [1137. height checker](./1137-height-checker/) - java
 
 
 
