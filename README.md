@@ -66,6 +66,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [958. sort array by parity ii](./958-sort-array-by-parity-ii/) - java
 - [841. shortest distance to a character](./841-shortest-distance-to-a-character/) - java
 - [917. boats to save people](./917-boats-to-save-people/) - java
+- [152. maximum product subarray](./152-maximum-product-subarray/) - java
 
 
 
