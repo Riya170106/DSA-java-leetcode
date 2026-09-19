@@ -83,6 +83,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [2. add two numbers](./2-add-two-numbers/) - java
 - [147. insertion sort list](./147-insertion-sort-list/) - java
 - [114. flatten binary tree to linked list](./114-flatten-binary-tree-to-linked-list/) - java
+- [24. swap nodes in pairs](./24-swap-nodes-in-pairs/) - java
 
 # 🌳 Binary Tree & BST
 - [799. minimum distance between bst nodes](./799-minimum-distance-between-bst-nodes/) - java
