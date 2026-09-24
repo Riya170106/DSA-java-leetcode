@@ -161,6 +161,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1212. Sequential Digits](./1212-sequential-digits/) - java
 - [1460. Number of Substrings Containing All Three Characters](./1460-number-of-substrings-containing-all-three-characters/) - java
 - [4321. digit frequency score](./4321-digit-frequency-score/) - java
+- [141. linked list cycle](./141-linked-list-cycle/) - java
 
 # 📈 Dynamic Programming / Greedy
 - [70. climbing stairs](./70-climbing-stairs/) - java
