@@ -163,6 +163,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [4321. digit frequency score](./4321-digit-frequency-score/) - java
 - [141. linked list cycle](./141-linked-list-cycle/) - java
 - [142. linked list cycle ii](./142-linked-list-cycle-ii/) - java
+- [160. intersection of two linked lists](./160-intersection-of-two-linked-lists/) - java
 
 # 📈 Dynamic Programming / Greedy
 - [70. climbing stairs](./70-climbing-stairs/) - java
