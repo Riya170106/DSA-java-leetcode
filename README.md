@@ -89,6 +89,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [19. remove nth node from end of list](./19-remove-nth-node-from-end-of-list/) - java
 - [83. remove duplicates from sorted list](./83-remove-duplicates-from-sorted-list/) - java
 - [908. middle of the linked list](./908-middle-of-the-linked-list/) - java
+- [61. rotate list](./61-rotate-list/) - java
 
 # 🌳 Binary Tree & BST
 - [799. minimum distance between bst nodes](./799-minimum-distance-between-bst-nodes/) - java
