@@ -166,6 +166,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [142. linked list cycle ii](./142-linked-list-cycle-ii/) - java
 - [160. intersection of two linked lists](./160-intersection-of-two-linked-lists/) - java
 - [389. find the difference](./389-find-the-difference/) - java
+- [424. longest repeating character replacement](./424-longest-repeating-character-replacement/) - java
 
 # 📈 Dynamic Programming / Greedy
 - [70. climbing stairs](./70-climbing-stairs/) - java
