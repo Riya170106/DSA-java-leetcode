@@ -67,6 +67,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [841. shortest distance to a character](./841-shortest-distance-to-a-character/) - java
 - [917. boats to save people](./917-boats-to-save-people/) - java
 - [152. maximum product subarray](./152-maximum-product-subarray/) - java
+- [268. missing number](./268-missing-number/) - java
 
 
 
