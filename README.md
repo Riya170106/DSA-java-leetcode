@@ -78,6 +78,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [2099. number of strings that appear as substrings in word](./2099-number-of-strings-that-appear-as-substrings-in-word/) - java
 - [344. reverse string](./344-reverse-string/) - java
 - [4135. concatenate non-zero digits and multiply](./4135-concatenate-non-zero-digits-and-multiply/) - java
+- [812. rotate string](./812-rotate-string/) - java
 
 
 # 🔗 Linked List
