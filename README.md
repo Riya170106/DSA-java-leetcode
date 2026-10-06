@@ -81,6 +81,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [344. reverse string](./344-reverse-string/) - java
 - [4135. concatenate non-zero digits and multiply](./4135-concatenate-non-zero-digits-and-multiply/) - java
 - [812. rotate string](./812-rotate-string/) - java
+- [1128. remove all adjacent duplicates in string](./1128-remove-all-adjacent-duplicates-in-string/) - java
 
 
 # 🔗 Linked List
