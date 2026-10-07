@@ -70,6 +70,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [268. missing number](./268-missing-number/) - java
 - [448. find all numbers disappeared in an array](./448-find-all-numbers-disappeared-in-an-array/) - java
 - [645. set mismatch](./645-set-mismatch/) - java
+- [496. next greater element i](./496-next-greater-element-i/) - java
 
 
 
