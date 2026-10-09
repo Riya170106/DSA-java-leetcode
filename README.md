@@ -83,6 +83,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [4135. concatenate non-zero digits and multiply](./4135-concatenate-non-zero-digits-and-multiply/) - java
 - [812. rotate string](./812-rotate-string/) - java
 - [1128. remove all adjacent duplicates in string](./1128-remove-all-adjacent-duplicates-in-string/) - java
+- [1567. maximum number of vowels in a substring of given length](./1567-maximum-number-of-vowels-in-a-substring-of-given-length/) - java
 
 
 # 🔗 Linked List
