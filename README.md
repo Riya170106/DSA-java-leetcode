@@ -179,6 +179,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [424. longest repeating character replacement](./424-longest-repeating-character-replacement/) - java
 - [807. custom sort string](./807-custom-sort-string/) - java
 - [2226. rings and rods](./2226-rings-and-rods/) - java
+- [2427. first letter to appear twice](./2427-first-letter-to-appear-twice/) - java
 
 # 📈 Dynamic Programming / Greedy
 - [70. climbing stairs](./70-climbing-stairs/) - java
