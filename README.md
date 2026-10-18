@@ -72,6 +72,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [645. set mismatch](./645-set-mismatch/) - java
 - [496. next greater element i](./496-next-greater-element-i/) - java
 - [966. binary subarrays with sum](./966-binary-subarrays-with-sum/) - java
+- [1603. running sum of 1d array](./1603-running-sum-of-1d-array/) - java
 
 
 
