@@ -168,6 +168,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [4248. count commas in range ii](./4248-count-commas-in-range-ii/) - java
 - [4275. traffic signal color](./4275-traffic-signal-color/) - java
 - [2752. sum multiples](./2752-sum-multiples/) - java
+- [2556. convert the temperature](./2556-convert-the-temperature/) - java
   
 # 🧩 Hashing / Frequency Counting
 - [137. single number ii](./137-single-number-ii/) - java
