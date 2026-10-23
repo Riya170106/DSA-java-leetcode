@@ -75,6 +75,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1603. running sum of 1d array](./1603-running-sum-of-1d-array/) - java
 - [2144. maximum difference between increasing elements](./2144-maximum-difference-between-increasing-elements/) - java
 - [485. max consecutive ones](./485-max-consecutive-ones/) - java
+- [442. find all duplicates in an array](./442-find-all-duplicates-in-an-array/) - java
 
 
 
