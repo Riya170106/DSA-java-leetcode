@@ -170,6 +170,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [4275. traffic signal color](./4275-traffic-signal-color/) - java
 - [2752. sum multiples](./2752-sum-multiples/) - java
 - [2556. convert the temperature](./2556-convert-the-temperature/) - java
+- [1406. subtract the product and sum of digits of an integer](./1406-subtract-the-product-and-sum-of-digits-of-an-integer/) - java
   
 # 🧩 Hashing / Frequency Counting
 - [137. single number ii](./137-single-number-ii/) - java
