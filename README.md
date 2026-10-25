@@ -76,6 +76,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [2144. maximum difference between increasing elements](./2144-maximum-difference-between-increasing-elements/) - java
 - [485. max consecutive ones](./485-max-consecutive-ones/) - java
 - [442. find all duplicates in an array](./442-find-all-duplicates-in-an-array/) - java
+- [2210. find target indices after sorting array](./2210-find-target-indices-after-sorting-array/) - java
 
 
 
