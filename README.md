@@ -77,6 +77,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [485. max consecutive ones](./485-max-consecutive-ones/) - java
 - [442. find all duplicates in an array](./442-find-all-duplicates-in-an-array/) - java
 - [2210. find target indices after sorting array](./2210-find-target-indices-after-sorting-array/) - java
+- [1019. squares of a sorted array](./1019-squares-of-a-sorted-array/) - java
 
 
 
