@@ -79,6 +79,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [2210. find target indices after sorting array](./2210-find-target-indices-after-sorting-array/) - java
 - [1019. squares of a sorted array](./1019-squares-of-a-sorted-array/) - java
 - [1482. how many numbers are smaller than the current number](./1482-how-many-numbers-are-smaller-than-the-current-number/) - java
+- [1781. check if two string arrays are equivalent](./1781-check-if-two-string-arrays-are-equivalent/) - java
 
 
 
