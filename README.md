@@ -81,6 +81,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1482. how many numbers are smaller than the current number](./1482-how-many-numbers-are-smaller-than-the-current-number/) - java
 - [1781. check if two string arrays are equivalent](./1781-check-if-two-string-arrays-are-equivalent/) - java
 - [1938. minimum operations to make the array increasing](./1938-minimum-operations-to-make-the-array-increasing/) - java
+- [824. number of lines to write string](./824-number-of-lines-to-write-string/) - java
 
 
 
