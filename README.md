@@ -97,6 +97,7 @@ I am using this repository to practice Data Structures & Algorithms, improve pro
 - [1567. maximum number of vowels in a substring of given length](./1567-maximum-number-of-vowels-in-a-substring-of-given-length/) - java
 - [2243. check if all as appears before all bs](./2243-check-if-all-as-appears-before-all-bs/) - java
 - [742. to lower case](./742-to-lower-case/) - java
+- [2361. calculate digit sum of a string](./2361-calculate-digit-sum-of-a-string/) - java
 
 
 # 🔗 Linked List
